@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor = blue]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeListItem}[3]{
+  \vspace{-1pt}\item\small{
+    \begin{tabular*}{0.92\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+    \end{tabular*}
+    #3
+    }
+}
+
+\newcommand{\resumeSubListItem}[4]{
+  \vspace{-1pt}\item\small{
+    \begin{tabular*}{0.92\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \\
+    \end{tabular*}
+
+    #4
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeOnlyItem}[1]{\item #1\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Chahak Mehta} & Email : \href{mailto:chahakmehta013@gmail.com}{chahak.mehta013@gmail.com}\\
+  \url{http://github.com/chahak13} & Mobile : +91 7984634784 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    % \resumeSubListItem
+    %   {Dhirubhai Ambani Institute of Information and Communication Technology}{Gandhinagar, India}
+    %   {B.Tech Hons. - Information and Communication Technology;  GPA: 8.5/10 }{Jul. 2015 - Apr. 2019}
+    \vspace{-1pt}\item\small{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Dhirubhai Ambani Institute of Information and Communication Technology} & Gandhinagar, India \\
+      \textit{B.Tech: Honors in Information and Communication Technology} & \textit{Jul. 2015 - Apr. 2019}\\
+      \textit{\qquad\quad\enspace Minor in Computational Science;\qquad GPA: 8.57/10} & \\
+    \end{tabular*}
+    }
+    \vspace{-1pt}\item\small{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Shree Satya Sai Vidyalaya} & Jamnagar, India \\
+      \textit{Senior Secondary High School} & \textit{2015} \\
+      \small{\textit{GSHSEB: 99.96 percentile}} &\\
+      
+    \end{tabular*}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine and Language Learning Lab, Indian Institute of Science}{Bangalore, India}
+          {Research Intern}{May 2018 - Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Research Intern - Sketch Based Image Retrieval}
+          { The main aim of the project was to try and develop a state-of-the-art Sketch Based Image Retrieval system using Computer Vision techniques. Initially results reported by breakthrough research papers on Sketch Based Image Retrieval were reproduced. This was followed by work on developing a general joint learning algorithm for cross-modal data and its benchmarking. Work was also done to achieve state-of-the-art performance in sketch recognition, the development of which used various models like ResNet-34, ResNet-56 and Inception, which are based on CNNs, along with various types of loss functions including Histogram Loss, Lifted Loss and Triplet Loss. These pre-trained models for photo and sketch classification were then used to perform joint training, inspired by the DeViSE model proposed by Google.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DA-IICT}{Gandhinagar, India}
+      {Research Assistant and Teaching Assistant}{}
+      \resumeItemListStart
+        \resumeListItem{Research Assistant - Complex Networks}{Aug 2018 - Dec 2018}
+        {The main aim of the project was to create a code-base (package) that will be used to identify control nodes and their properties using various standard algorithms from the literature, thereby enabling easier research in the field of Controllability of Complex Networks.}
+        
+        \resumeListItem{Teaching Assistant - Computational Numerical Methods}{Aug 2018 - Dec 2018}
+        {Worked in tandem with the professor and the students to conduct the lab sessions and help the students in case of any problems on topics including various methods to solve differential equations like Jacobi, Gauss-Seidel, and Runge-Kutta methods, root finding techniques, interpolation and other numerical methods.}
+        
+        \resumeListItem{Teaching Assistant - Introductory Computational Physics}{Jan 2019 - May 2019}
+        {Worked in helping the professor by carrying out lab sessions for better understanding of various topics from Computational Physics like usage of ODE solvers, Lagrangian and Hamiltonians of systems and chaotic systems like double pendulum.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubListItem{FMM Accelerated FFT}{Jan 2019 - Apr 2019}{Mentor: Prof. Bhaskar Chaudhury}
+    {This project looks at the ability of Fast Multipole Method (FMM) to accelerate the Fast Fourier Transform (FFT) on a distributed memory system. We looked into the effect of FMM and how it can help to improve the communication bottleneck that is often faced by FFT. We also looked into various architectures of clusters that perform scientific computing like High Performace Computing Clusters and Beowulf Clusters and report conditions where FMM-accelerated FFT is a better option than conventional parallel FFTs.}
+
+    \resumeSubListItem{Binary Sentiment Analysis of IMdB Dataset}{Oct 2018}{Mentor: Prof. Bakul Gohel}
+    {Performed sentiment analysis of large movie review dataset (IMdB dataset) using various approaches from conventional Machine Learning and Deep Learning. Statistics of techniques like Bag of Words with Logistic Regression and Naive Bayes and Embeddings with CNN and LSTMs were used and reported.}
+
+    \resumeSubListItem{Simulation of Boids}{Feb 2018 - Mar 2018}{Mentor: Prof. Mukesh Tiwari}
+    {Implemented an interactive prototype (\url{https://chahak13.github.io/fish-boids/}) of the Craig Reynolds' model for swarming of boids using P5JS. Further extended it by changing and adding to the rules of swarming to incorporate features like color segregation, behaviour of predators and behaviour of swarms in the presence of predators. Also worked on an alternate method of swarming using the Vicsek Model (\url{https://97amarnathk.github.io/VicsekModel/})}
+
+    \resumeSubListItem{Analysis of Chaos}{Feb 2018 - Mar 2018}{Mentor: Prof. Mukesh Tiwari}
+    {Implemented the Lorenz equations using Python to visualize the chaotic behaviour of a particle governed by the equations and to visualize the forms of a Lorenz Attractor. Further analyzed the system using concepts like Lyapunov Exponents and Lorenz Maps.}
+
+    \resumeSubListItem{Parallel 2D Steady State Heat equation}{Aug 2017 - Nov 2017}{Mentor: Prof. Bhaskar Chaudhury}
+    {Implemented the parallel code to solve the 2D steady state heat equation to analyse various parallelization techniques in C. The parallel code attained a speedup of more than 10 than the serial implementation of the same. We implemented two decomposition techniques - Wavefront technique and Red-black decomposition, to parallely and efficiently calculate the gradients in the diffusion equation.}
+
+    \resumeSubListItem{MCMC on Classical Ciphers}{May 2017 - July 2017}{Mentor: Prof. Anish Mathuria}
+    {Solved several classical ciphers like Substitution cipher Transposition cipher and Product cipher using only cipher text without any extra information using Monte Carlo-Markov Chain algorithms. Tried solving other classical ciphers like Vignere cipher and Hill cipher using this method of cipher-text only attack.}
+    
+    \resumeSubListItem{Wizard Chess}{Aug 2017 - Nov 2017}{Mentor: Prof. Amit Bhatt}
+    {Created a working model of a controlled chess bot using Raspberry Pi which could be played by issuing voice commands to a mobile app developed for the same.}
+
+    \resumeSubListItem{Tiny Shell}{Mar 2017}{Mentor: Prof. Anish Mathuria}
+    {A basic replication of the Linux shell using C which can allocate jobs, maintain a job table for the foreground and background processes and can fork multiple processes.}
+    
+    \resumeSubListItem{Sports Inventory Database Management System}{Aug 2017 - Nov 2017}{Mentor: Prof. P.M.Jat}{Created a console based database management system for our college using PostgreSQL that maintains and updates the sports inventory of the institution}
+    
+    \resumeSubListItem{Zipf's Law in Debian packages}{Mar 2018}{Mentor: Prof. Arnab Ray}
+    {Using Python, checked that the interdependencies of packages in Debian follow the Zipf's Law.}
+
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages:}{  Python, C, MATLAB, Shell scripting, \LaTeX, Javascript, PostgreSQL, Java}
+     \hfill}
+    \item{
+     \textbf{Libraries and Technologies:}{  Numpy, Scipy, OpenMP, OpenMPI, Scikit, PyTorch, Keras, Git, Matplotlib, Pandas, Qiskit}
+    }
+ \resumeSubHeadingListEnd
+
+% 
+% ---------Achievements and Awards-------
+\section{Achievements and Awards}
+    \resumeItemListStart
+        \resumeOnlyItem Awarded merit-based scholarship (full tuition fee waiver) for being among top 5 students at the university
+        \resumeOnlyItem Ranked among top $0.1\%$ students out of 13 lakh students in JEE mains Examination
+        \resumeOnlyItem Ranked 121 internationally in the IEO organised by Science Olympiad Foundation
+        \resumeOnlyItem Ranked 2164 internationally in the IMO organised by Science Olympiad Foundation
+        \resumeOnlyItem Part of the winning team of Football in Concours 2017 (Annual Sports Festival)
+    \resumeItemListEnd
+    
+% 
+% ---------Position of Responsibility----
+\section{Position of Responsibility}
+\resumeItemListStart
+    \resumeOnlyItem Convenor of Headrush - The Quizzing Club of the College
+    \resumeOnlyItem Member of Press Club Core-Committee
+    \resumeOnlyItem Member of Student Body Government
+    \resumeOnlyItem Member of Anti-Ragging Committee
+    \resumeOnlyItem Member of the Election Commission of the college for the Student Body Government elections.
+    \resumeOnlyItem Event Coordinator for Synapse 2017, 2018 (Annual Cultural Festival)
+\resumeItemListEnd
+% 
+% ---------Relevant Coursework-----------
+\section{Relevant Coursework}
+    
+    \begin{tabular}{r l}
+      \begin{minipage}[t]{0.4\textwidth}
+        \resumeItemListStart
+            \resumeOnlyItem Modelling and Simulation
+            \resumeOnlyItem Nonlinear Science
+            \resumeOnlyItem Introduction to Complex Networks
+            \resumeOnlyItem Data Analysis and Visualization
+            \resumeOnlyItem Computational and Numerical Methods
+            \resumeOnlyItem High Performance Computing
+            \resumeOnlyItem Computational Finance
+            \resumeOnlyItem Introduction to Computational Physics
+        \resumeItemListEnd
+      \end{minipage}
+      &
+      \begin{minipage}[t]{0.4\textwidth}
+        \resumeItemListStart
+            \resumeOnlyItem Algebraic Structures
+            \resumeOnlyItem Computer Networks
+            \resumeOnlyItem Quantum Computation
+            \resumeOnlyItem Probability and Statistics
+            \resumeOnlyItem Introduction to Algorithms
+            \resumeOnlyItem Data Structures
+            \resumeOnlyItem Selected Topics in Neural Networks
+            \resumeOnlyItem Deeplearning Specialization (Coursera)
+        \resumeItemListEnd
+      \end{minipage}
+    \end{tabular}
+
+%-------------------------------------------
+\end{document}
